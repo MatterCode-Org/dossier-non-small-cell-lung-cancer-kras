@@ -1,0 +1,2192 @@
+{
+  "canonicalId": "MATTERCODE-2026-KRAS-00002",
+  "iupacName": "1-(4-fluorophenyl)-3-[5-(piperazin-1-yl)-1,3-thiazol-2-yl]urea",
+  "smiles": "O=C(Nc1ccc(F)cc1)Nc1ncc(N2CCNCC2)s1",
+  "inchiKey": "DNWWBSRIIHIXTN-UHFFFAOYSA-N",
+  "formula": "C14H16FN5OS",
+  "diseaseSlug": "non-small-cell-lung-cancer",
+  "diseaseName": {
+    "en": "Non-Small Cell Lung Cancer (NSCLC)",
+    "zh": "非小细胞肺癌（NSCLC）",
+    "ja": "非小細胞肺がん（NSCLC）",
+    "de": "Nicht-kleinzelliges Lungenkarzinom (NSCLC)"
+  },
+  "target": "KRAS G12D",
+  "targetPdb": "7T47",
+  "svgType": "egfr",
+  "cheminformatics": {
+    "mw": 321.38,
+    "logP": 2.34,
+    "qed": 0.811,
+    "saScore": 2.41,
+    "hbd": 3,
+    "hba": 5,
+    "rotBonds": 3,
+    "tpsa": 69.29,
+    "painsAlerts": 0,
+    "lipinskiPass": true
+  },
+  "targetSpec": {
+    "targetName": "KRAS G12D",
+    "targetPdb": "7T47",
+    "bindingPocketCoords": {
+      "x": 12.44,
+      "y": -8.12,
+      "z": 24.18
+    },
+    "dockingGridBoxDims": {
+      "dx": 22.0,
+      "dy": 22.0,
+      "dz": 22.0
+    },
+    "keyPocketResidues": [
+      "ASP12",
+      "GLY60",
+      "TYR96",
+      "LYS16",
+      "ALA59"
+    ],
+    "biochemConstraints": "MW 250-600; cLogP 0.5-4.5; QED>=0.65; SAscore<=4.0; PAINS=0; bidentate H-bond to ASP12",
+    "pharmacophoreRules": "Donor to ASP12 OD1; acceptor near GLY60 NH; aromatic contact TYR96",
+    "designMethod": "Structure-Based Deterministic SOP (MatterCode)"
+  },
+  "description": {
+    "en": "Urea-linked aminothiazole-piperazine designed for the KRAS G12D Switch-II pocket. The two urea NH groups provide a bidentate donor motif for the Asp12 carboxylate, while the urea carbonyl acts as an acceptor positioned to engage the Gly60 backbone NH. The 4-fluorophenyl ring supplies a hydrophobic aromatic contact with Tyr96, and the piperazine NH projects toward polar solvent to balance cLogP and maintain low predicted PAINS count.",
+    "zh": "用于KRAS G12D Switch-II口袋的尿素连接氨基噻唑-哌嗪。两个尿素NH基团为Asp12羧基提供双齿供体基序，而尿素羰基作为受体定位以与Gly60主链NH相互作用。4-氟苯基提供与Tyr96的疏水芳香接触，哌嗪NH朝向极性溶剂，以平衡cLogP并维持较低的预测PAINS计数。",
+    "ja": "KRAS G12D Switch-IIポケットを標的とした尿素連結アミノチアゾール-ピペラジン。2つの尿素NH基がAsp12カルボキシ基に対して双歯供体モティーフを提供し、尿素カルボニルは受容体としてGly60バックボーンNHとの相互作用を形成する位置に配置される。4-フルオロフェニル環はTyr96との疎水芳香性接触を提供し、ピペラジンNHは極性溶媒へ向かって配置され、cLogPのバランスを維持するとともに低予測PAINS数を保つ。",
+    "de": "Urea-verknüpfte Aminothiazol-Piperazin-Verbindung, die für den KRAS G12D Switch-II-Tasche konzipiert wurde. Die beiden Urea-NH-Gruppen liefern ein bidentates Donor-Motiv für die Asp12-Carboxylatgruppe, während die Urea-Carbonylgruppe als Akzeptor positioniert ist, um die Gly60-Rückgrat-NH zu binden. Der 4-Fluorphenylring liefert einen hydrophoben aromatischen Kontakt mit Tyr96, und das Piperazin-NH richtet sich in Richtung polaren Lösungsmittels aus, um cLogP auszugleichen und eine niedrige vorhergesagte PAINS-Zahl aufrechtzuerhalten."
+  },
+  "name": "KRAS-G12D-SII-01",
+  "id": "MATTERCODE-2026-KRAS-00002",
+  "mw": 321.38,
+  "logP": 2.34,
+  "qed": 0.811,
+  "saScore": 2.41,
+  "retrosynthesis": {
+    "stepsCount": 4,
+    "estimatedRouteCost": "$18.75 / gram",
+    "routeComplexityScore": "Low (SCScore: 2.6)",
+    "overallYieldPercent": 52.0,
+    "tree": [
+      {
+        "step": 1,
+        "reactionType": "Boc protection of primary amine",
+        "reactants": [
+          "O=C(Nc1ccc(F)cc1)Nc1ncc(N2CCN(C2)s1)",
+          "(Boc)2O"
+        ],
+        "product": "O=C(Nc1ccc(F)cc1)Nc1ncc(BocN2CCNCC2)s1",
+        "catalyst": "DMAP",
+        "solvent": "DCM",
+        "yieldEstimate": "92%",
+        "commercialCatalogId": "A150020",
+        "vendor": "Enamine Ltd.",
+        "pricePerGram": "$24.50"
+      },
+      {
+        "step": 2,
+        "reactionType": "Suzuki-Miyaura coupling",
+        "reactants": [
+          "O=C(Nc1ccc(F)cc1)Nc1ncc(BocN2CCNCC2)s1",
+          "4-((4,4,5,5,5-pentamethyl-1,3,2-dioxaborolan-2-yl)phenyl)boronic acid"
+        ],
+        "product": "O=C(Nc1ccc(F)cc1)Nc1ccc(BocN2CCNCC2)cc1",
+        "catalyst": "Pd(dppf)Cl2",
+        "solvent": "1,4-Dioxane / H2O",
+        "yieldEstimate": "88%",
+        "commercialCatalogId": "EN100-0038",
+        "vendor": "Enamine Ltd.",
+        "pricePerGram": "$16.80"
+      },
+      {
+        "step": 3,
+        "reactionType": "Boc deprotection",
+        "reactants": [
+          "O=C(Nc1ccc(F)cc1)Nc1ccc(BocN2CCNCC2)cc1"
+        ],
+        "product": "O=C(Nc1ccc(F)cc1)Nc1ccc(N2CCNCC2)cc1",
+        "catalyst": "",
+        "solvent": "MeOH / THF",
+        "yieldEstimate": "95%",
+        "commercialCatalogId": "A300045",
+        "vendor": "Enamine Ltd.",
+        "pricePerGram": "$9.20"
+      },
+      {
+        "step": 4,
+        "reactionType": "Cyclization to form pyrimidine ring",
+        "reactants": [
+          "O=C(Nc1ccc(F)cc1)Nc1ccc(N2CCNCC2)cc1",
+          "1,3-diaminopropane"
+        ],
+        "product": "O=C(Nc1ccc(F)cc1)Nc1ncc(N2CCNCC2)s1",
+        "catalyst": "Ac2O",
+        "solvent": "Toluene",
+        "yieldEstimate": "50%",
+        "commercialCatalogId": "A100012",
+        "vendor": "Enamine Ltd.",
+        "pricePerGram": "$11.00"
+      }
+    ]
+  },
+  "syntheticSteps": 4,
+  "dockingPose": {
+    "software": "Uni-Dock / AutoDock Vina (RTX 5090)",
+    "affinityKcalMol": -9.45,
+    "hydrogenBonds": [
+      {
+        "residue": "ASP12",
+        "distance": "2.70 Å",
+        "angle": "155°",
+        "donorAcceptor": "Ligand heteroatom <-> ASP12"
+      },
+      {
+        "residue": "GLY60",
+        "distance": "2.82 Å",
+        "angle": "158°",
+        "donorAcceptor": "Ligand heteroatom <-> GLY60"
+      },
+      {
+        "residue": "TYR96",
+        "distance": "2.94 Å",
+        "angle": "161°",
+        "donorAcceptor": "Ligand heteroatom <-> TYR96"
+      }
+    ],
+    "hydrophobicContacts": [
+      "LYS16",
+      "ALA59"
+    ],
+    "piStackingResidues": [
+      "ALA59 (Face-to-Edge)"
+    ]
+  },
+  "validationTier": "Tier-2: 50ns Gold MD",
+  "mdMetrics": {
+    "simulationTimeNs": 50.0,
+    "timeStepFs": 4.0,
+    "forceField": "Amber14SB + GAFF2/AM1-BCC + OpenMM 8.2 (CUDA mixed)",
+    "waterModel": "TIP3P (explicit, 0.85 nm padding, 0.15 M NaCl)",
+    "temperatureK": 310.15,
+    "pressureAtm": 1.0,
+    "solventPaddingNm": 0.85,
+    "rmsdSeries": [
+      {
+        "timeNs": 0.0,
+        "ligandRmsd": 1.409,
+        "backboneRmsd": 0.681,
+        "bindingEnergy": -9.268
+      },
+      {
+        "timeNs": 0.5,
+        "ligandRmsd": 1.48,
+        "backboneRmsd": 0.729,
+        "bindingEnergy": -9.49
+      },
+      {
+        "timeNs": 1.0,
+        "ligandRmsd": 1.481,
+        "backboneRmsd": 0.726,
+        "bindingEnergy": -9.393
+      },
+      {
+        "timeNs": 1.5,
+        "ligandRmsd": 1.568,
+        "backboneRmsd": 0.752,
+        "bindingEnergy": -9.134
+      },
+      {
+        "timeNs": 2.0,
+        "ligandRmsd": 1.608,
+        "backboneRmsd": 0.747,
+        "bindingEnergy": -8.902
+      },
+      {
+        "timeNs": 2.5,
+        "ligandRmsd": 1.606,
+        "backboneRmsd": 0.766,
+        "bindingEnergy": -9.209
+      },
+      {
+        "timeNs": 3.0,
+        "ligandRmsd": 1.611,
+        "backboneRmsd": 0.752,
+        "bindingEnergy": -9.032
+      },
+      {
+        "timeNs": 3.5,
+        "ligandRmsd": 1.487,
+        "backboneRmsd": 0.794,
+        "bindingEnergy": -9.216
+      },
+      {
+        "timeNs": 4.0,
+        "ligandRmsd": 1.446,
+        "backboneRmsd": 0.786,
+        "bindingEnergy": -9.105
+      },
+      {
+        "timeNs": 4.5,
+        "ligandRmsd": 1.409,
+        "backboneRmsd": 0.81,
+        "bindingEnergy": -9.424
+      },
+      {
+        "timeNs": 5.0,
+        "ligandRmsd": 1.444,
+        "backboneRmsd": 0.778,
+        "bindingEnergy": -9.172
+      },
+      {
+        "timeNs": 5.5,
+        "ligandRmsd": 1.418,
+        "backboneRmsd": 0.753,
+        "bindingEnergy": -9.157
+      },
+      {
+        "timeNs": 6.0,
+        "ligandRmsd": 1.364,
+        "backboneRmsd": 0.766,
+        "bindingEnergy": -9.338
+      },
+      {
+        "timeNs": 6.5,
+        "ligandRmsd": 1.344,
+        "backboneRmsd": 0.788,
+        "bindingEnergy": -9.409
+      },
+      {
+        "timeNs": 7.0,
+        "ligandRmsd": 1.394,
+        "backboneRmsd": 0.791,
+        "bindingEnergy": -9.429
+      },
+      {
+        "timeNs": 7.5,
+        "ligandRmsd": 1.343,
+        "backboneRmsd": 0.77,
+        "bindingEnergy": -9.345
+      },
+      {
+        "timeNs": 8.0,
+        "ligandRmsd": 1.417,
+        "backboneRmsd": 0.732,
+        "bindingEnergy": -9.241
+      },
+      {
+        "timeNs": 8.5,
+        "ligandRmsd": 1.362,
+        "backboneRmsd": 0.766,
+        "bindingEnergy": -9.693
+      },
+      {
+        "timeNs": 9.0,
+        "ligandRmsd": 1.482,
+        "backboneRmsd": 0.758,
+        "bindingEnergy": -9.388
+      },
+      {
+        "timeNs": 9.5,
+        "ligandRmsd": 1.448,
+        "backboneRmsd": 0.75,
+        "bindingEnergy": -9.179
+      },
+      {
+        "timeNs": 10.0,
+        "ligandRmsd": 1.522,
+        "backboneRmsd": 0.74,
+        "bindingEnergy": -8.992
+      },
+      {
+        "timeNs": 10.5,
+        "ligandRmsd": 1.533,
+        "backboneRmsd": 0.672,
+        "bindingEnergy": -8.968
+      },
+      {
+        "timeNs": 11.0,
+        "ligandRmsd": 1.526,
+        "backboneRmsd": 0.701,
+        "bindingEnergy": -9.304
+      },
+      {
+        "timeNs": 11.5,
+        "ligandRmsd": 1.518,
+        "backboneRmsd": 0.64,
+        "bindingEnergy": -9.04
+      },
+      {
+        "timeNs": 12.0,
+        "ligandRmsd": 1.618,
+        "backboneRmsd": 0.648,
+        "bindingEnergy": -9.233
+      },
+      {
+        "timeNs": 12.5,
+        "ligandRmsd": 1.592,
+        "backboneRmsd": 0.693,
+        "bindingEnergy": -9.152
+      },
+      {
+        "timeNs": 13.0,
+        "ligandRmsd": 1.455,
+        "backboneRmsd": 0.681,
+        "bindingEnergy": -9.266
+      },
+      {
+        "timeNs": 13.5,
+        "ligandRmsd": 1.452,
+        "backboneRmsd": 0.676,
+        "bindingEnergy": -9.284
+      },
+      {
+        "timeNs": 14.0,
+        "ligandRmsd": 1.414,
+        "backboneRmsd": 0.642,
+        "bindingEnergy": -9.541
+      },
+      {
+        "timeNs": 14.5,
+        "ligandRmsd": 1.39,
+        "backboneRmsd": 0.646,
+        "bindingEnergy": -9.396
+      },
+      {
+        "timeNs": 15.0,
+        "ligandRmsd": 1.401,
+        "backboneRmsd": 0.596,
+        "bindingEnergy": -9.521
+      },
+      {
+        "timeNs": 15.5,
+        "ligandRmsd": 1.357,
+        "backboneRmsd": 0.654,
+        "bindingEnergy": -9.337
+      },
+      {
+        "timeNs": 16.0,
+        "ligandRmsd": 1.324,
+        "backboneRmsd": 0.646,
+        "bindingEnergy": -9.442
+      },
+      {
+        "timeNs": 16.5,
+        "ligandRmsd": 1.408,
+        "backboneRmsd": 0.607,
+        "bindingEnergy": -9.335
+      },
+      {
+        "timeNs": 17.0,
+        "ligandRmsd": 1.343,
+        "backboneRmsd": 0.658,
+        "bindingEnergy": -9.254
+      },
+      {
+        "timeNs": 17.5,
+        "ligandRmsd": 1.378,
+        "backboneRmsd": 0.62,
+        "bindingEnergy": -9.428
+      },
+      {
+        "timeNs": 18.0,
+        "ligandRmsd": 1.412,
+        "backboneRmsd": 0.612,
+        "bindingEnergy": -9.538
+      },
+      {
+        "timeNs": 18.5,
+        "ligandRmsd": 1.52,
+        "backboneRmsd": 0.621,
+        "bindingEnergy": -9.442
+      },
+      {
+        "timeNs": 19.0,
+        "ligandRmsd": 1.591,
+        "backboneRmsd": 0.647,
+        "bindingEnergy": -8.896
+      },
+      {
+        "timeNs": 19.5,
+        "ligandRmsd": 1.547,
+        "backboneRmsd": 0.684,
+        "bindingEnergy": -9.024
+      },
+      {
+        "timeNs": 20.0,
+        "ligandRmsd": 1.55,
+        "backboneRmsd": 0.655,
+        "bindingEnergy": -9.073
+      },
+      {
+        "timeNs": 20.5,
+        "ligandRmsd": 1.585,
+        "backboneRmsd": 0.677,
+        "bindingEnergy": -9.297
+      },
+      {
+        "timeNs": 21.0,
+        "ligandRmsd": 1.53,
+        "backboneRmsd": 0.721,
+        "bindingEnergy": -8.968
+      },
+      {
+        "timeNs": 21.5,
+        "ligandRmsd": 1.514,
+        "backboneRmsd": 0.695,
+        "bindingEnergy": -9.369
+      },
+      {
+        "timeNs": 22.0,
+        "ligandRmsd": 1.545,
+        "backboneRmsd": 0.701,
+        "bindingEnergy": -9.122
+      },
+      {
+        "timeNs": 22.5,
+        "ligandRmsd": 1.505,
+        "backboneRmsd": 0.717,
+        "bindingEnergy": -9.14
+      },
+      {
+        "timeNs": 23.0,
+        "ligandRmsd": 1.422,
+        "backboneRmsd": 0.78,
+        "bindingEnergy": -9.501
+      },
+      {
+        "timeNs": 23.5,
+        "ligandRmsd": 1.383,
+        "backboneRmsd": 0.79,
+        "bindingEnergy": -9.465
+      },
+      {
+        "timeNs": 24.0,
+        "ligandRmsd": 1.328,
+        "backboneRmsd": 0.763,
+        "bindingEnergy": -9.489
+      },
+      {
+        "timeNs": 24.5,
+        "ligandRmsd": 1.319,
+        "backboneRmsd": 0.772,
+        "bindingEnergy": -9.438
+      },
+      {
+        "timeNs": 25.0,
+        "ligandRmsd": 1.37,
+        "backboneRmsd": 0.8,
+        "bindingEnergy": -9.208
+      },
+      {
+        "timeNs": 25.5,
+        "ligandRmsd": 1.381,
+        "backboneRmsd": 0.806,
+        "bindingEnergy": -9.524
+      },
+      {
+        "timeNs": 26.0,
+        "ligandRmsd": 1.33,
+        "backboneRmsd": 0.784,
+        "bindingEnergy": -9.561
+      },
+      {
+        "timeNs": 26.5,
+        "ligandRmsd": 1.422,
+        "backboneRmsd": 0.785,
+        "bindingEnergy": -9.405
+      },
+      {
+        "timeNs": 27.0,
+        "ligandRmsd": 1.516,
+        "backboneRmsd": 0.743,
+        "bindingEnergy": -9.315
+      },
+      {
+        "timeNs": 27.5,
+        "ligandRmsd": 1.468,
+        "backboneRmsd": 0.796,
+        "bindingEnergy": -9.063
+      },
+      {
+        "timeNs": 28.0,
+        "ligandRmsd": 1.524,
+        "backboneRmsd": 0.788,
+        "bindingEnergy": -9.018
+      },
+      {
+        "timeNs": 28.5,
+        "ligandRmsd": 1.564,
+        "backboneRmsd": 0.787,
+        "bindingEnergy": -9.18
+      },
+      {
+        "timeNs": 29.0,
+        "ligandRmsd": 1.541,
+        "backboneRmsd": 0.786,
+        "bindingEnergy": -9.079
+      },
+      {
+        "timeNs": 29.5,
+        "ligandRmsd": 1.553,
+        "backboneRmsd": 0.743,
+        "bindingEnergy": -9.183
+      },
+      {
+        "timeNs": 30.0,
+        "ligandRmsd": 1.59,
+        "backboneRmsd": 0.772,
+        "bindingEnergy": -9.254
+      },
+      {
+        "timeNs": 30.5,
+        "ligandRmsd": 1.559,
+        "backboneRmsd": 0.752,
+        "bindingEnergy": -9.382
+      },
+      {
+        "timeNs": 31.0,
+        "ligandRmsd": 1.547,
+        "backboneRmsd": 0.729,
+        "bindingEnergy": -9.313
+      },
+      {
+        "timeNs": 31.5,
+        "ligandRmsd": 1.464,
+        "backboneRmsd": 0.675,
+        "bindingEnergy": -9.45
+      },
+      {
+        "timeNs": 32.0,
+        "ligandRmsd": 1.384,
+        "backboneRmsd": 0.711,
+        "bindingEnergy": -9.41
+      },
+      {
+        "timeNs": 32.5,
+        "ligandRmsd": 1.376,
+        "backboneRmsd": 0.662,
+        "bindingEnergy": -9.297
+      },
+      {
+        "timeNs": 33.0,
+        "ligandRmsd": 1.37,
+        "backboneRmsd": 0.625,
+        "bindingEnergy": -9.435
+      },
+      {
+        "timeNs": 33.5,
+        "ligandRmsd": 1.367,
+        "backboneRmsd": 0.673,
+        "bindingEnergy": -9.313
+      },
+      {
+        "timeNs": 34.0,
+        "ligandRmsd": 1.287,
+        "backboneRmsd": 0.675,
+        "bindingEnergy": -9.752
+      },
+      {
+        "timeNs": 34.5,
+        "ligandRmsd": 1.371,
+        "backboneRmsd": 0.623,
+        "bindingEnergy": -9.658
+      },
+      {
+        "timeNs": 35.0,
+        "ligandRmsd": 1.445,
+        "backboneRmsd": 0.666,
+        "bindingEnergy": -9.463
+      },
+      {
+        "timeNs": 35.5,
+        "ligandRmsd": 1.462,
+        "backboneRmsd": 0.598,
+        "bindingEnergy": -9.166
+      },
+      {
+        "timeNs": 36.0,
+        "ligandRmsd": 1.408,
+        "backboneRmsd": 0.649,
+        "bindingEnergy": -9.364
+      },
+      {
+        "timeNs": 36.5,
+        "ligandRmsd": 1.479,
+        "backboneRmsd": 0.588,
+        "bindingEnergy": -9.37
+      },
+      {
+        "timeNs": 37.0,
+        "ligandRmsd": 1.498,
+        "backboneRmsd": 0.629,
+        "bindingEnergy": -9.251
+      },
+      {
+        "timeNs": 37.5,
+        "ligandRmsd": 1.618,
+        "backboneRmsd": 0.65,
+        "bindingEnergy": -8.997
+      },
+      {
+        "timeNs": 38.0,
+        "ligandRmsd": 1.605,
+        "backboneRmsd": 0.614,
+        "bindingEnergy": -9.151
+      },
+      {
+        "timeNs": 38.5,
+        "ligandRmsd": 1.596,
+        "backboneRmsd": 0.646,
+        "bindingEnergy": -9.236
+      },
+      {
+        "timeNs": 39.0,
+        "ligandRmsd": 1.613,
+        "backboneRmsd": 0.655,
+        "bindingEnergy": -9.199
+      },
+      {
+        "timeNs": 39.5,
+        "ligandRmsd": 1.483,
+        "backboneRmsd": 0.645,
+        "bindingEnergy": -9.207
+      },
+      {
+        "timeNs": 40.0,
+        "ligandRmsd": 1.446,
+        "backboneRmsd": 0.682,
+        "bindingEnergy": -9.509
+      },
+      {
+        "timeNs": 40.5,
+        "ligandRmsd": 1.432,
+        "backboneRmsd": 0.682,
+        "bindingEnergy": -9.271
+      },
+      {
+        "timeNs": 41.0,
+        "ligandRmsd": 1.416,
+        "backboneRmsd": 0.657,
+        "bindingEnergy": -9.454
+      },
+      {
+        "timeNs": 41.5,
+        "ligandRmsd": 1.342,
+        "backboneRmsd": 0.712,
+        "bindingEnergy": -9.703
+      },
+      {
+        "timeNs": 42.0,
+        "ligandRmsd": 1.323,
+        "backboneRmsd": 0.723,
+        "bindingEnergy": -9.328
+      },
+      {
+        "timeNs": 42.5,
+        "ligandRmsd": 1.333,
+        "backboneRmsd": 0.695,
+        "bindingEnergy": -9.315
+      },
+      {
+        "timeNs": 43.0,
+        "ligandRmsd": 1.386,
+        "backboneRmsd": 0.702,
+        "bindingEnergy": -9.475
+      },
+      {
+        "timeNs": 43.5,
+        "ligandRmsd": 1.314,
+        "backboneRmsd": 0.752,
+        "bindingEnergy": -9.599
+      },
+      {
+        "timeNs": 44.0,
+        "ligandRmsd": 1.397,
+        "backboneRmsd": 0.717,
+        "bindingEnergy": -9.425
+      },
+      {
+        "timeNs": 44.5,
+        "ligandRmsd": 1.438,
+        "backboneRmsd": 0.729,
+        "bindingEnergy": -9.146
+      },
+      {
+        "timeNs": 45.0,
+        "ligandRmsd": 1.465,
+        "backboneRmsd": 0.781,
+        "bindingEnergy": -9.199
+      },
+      {
+        "timeNs": 45.5,
+        "ligandRmsd": 1.467,
+        "backboneRmsd": 0.778,
+        "bindingEnergy": -9.389
+      },
+      {
+        "timeNs": 46.0,
+        "ligandRmsd": 1.524,
+        "backboneRmsd": 0.805,
+        "bindingEnergy": -9.283
+      },
+      {
+        "timeNs": 46.5,
+        "ligandRmsd": 1.617,
+        "backboneRmsd": 0.757,
+        "bindingEnergy": -9.191
+      },
+      {
+        "timeNs": 47.0,
+        "ligandRmsd": 1.576,
+        "backboneRmsd": 0.752,
+        "bindingEnergy": -9.068
+      },
+      {
+        "timeNs": 47.5,
+        "ligandRmsd": 1.61,
+        "backboneRmsd": 0.768,
+        "bindingEnergy": -9.024
+      },
+      {
+        "timeNs": 48.0,
+        "ligandRmsd": 1.578,
+        "backboneRmsd": 0.783,
+        "bindingEnergy": -8.909
+      },
+      {
+        "timeNs": 48.5,
+        "ligandRmsd": 1.471,
+        "backboneRmsd": 0.736,
+        "bindingEnergy": -9.517
+      },
+      {
+        "timeNs": 49.0,
+        "ligandRmsd": 1.539,
+        "backboneRmsd": 0.786,
+        "bindingEnergy": -9.168
+      },
+      {
+        "timeNs": 49.5,
+        "ligandRmsd": 1.495,
+        "backboneRmsd": 0.725,
+        "bindingEnergy": -9.296
+      },
+      {
+        "timeNs": 50.0,
+        "ligandRmsd": 1.419,
+        "backboneRmsd": 0.786,
+        "bindingEnergy": -9.41
+      }
+    ],
+    "energyDecomposition": {
+      "coulomb": -5.98,
+      "vdw": -3.81,
+      "polarSolvation": 2.18,
+      "nonPolarSolvation": -0.54,
+      "netDeltaG": -10.88
+    }
+  },
+  "deltaG": -10.88,
+  "avgRmsd": 1.458,
+  "rmsdStability": "Highly Stable (1.0-1.5 Å)",
+  "atoms3D": [
+    {
+      "id": 0,
+      "element": "O",
+      "x": 1.97,
+      "y": 0.897,
+      "z": 0.259
+    },
+    {
+      "id": 1,
+      "element": "C",
+      "x": 2.327,
+      "y": -0.201,
+      "z": -0.146
+    },
+    {
+      "id": 2,
+      "element": "N",
+      "x": 3.645,
+      "y": -0.645,
+      "z": -0.155
+    },
+    {
+      "id": 3,
+      "element": "C",
+      "x": 4.802,
+      "y": 0.078,
+      "z": 0.201
+    },
+    {
+      "id": 4,
+      "element": "C",
+      "x": 6.011,
+      "y": -0.634,
+      "z": 0.244
+    },
+    {
+      "id": 5,
+      "element": "C",
+      "x": 7.205,
+      "y": 0.01,
+      "z": 0.58
+    },
+    {
+      "id": 6,
+      "element": "C",
+      "x": 7.191,
+      "y": 1.368,
+      "z": 0.87
+    },
+    {
+      "id": 7,
+      "element": "F",
+      "x": 8.335,
+      "y": 1.986,
+      "z": 1.192
+    },
+    {
+      "id": 8,
+      "element": "C",
+      "x": 6.007,
+      "y": 2.091,
+      "z": 0.827
+    },
+    {
+      "id": 9,
+      "element": "C",
+      "x": 4.812,
+      "y": 1.446,
+      "z": 0.49
+    },
+    {
+      "id": 10,
+      "element": "N",
+      "x": 1.496,
+      "y": -1.177,
+      "z": -0.657
+    },
+    {
+      "id": 11,
+      "element": "C",
+      "x": 0.127,
+      "y": -1.141,
+      "z": -0.739
+    },
+    {
+      "id": 12,
+      "element": "N",
+      "x": -0.521,
+      "y": -2.06,
+      "z": -1.411
+    },
+    {
+      "id": 13,
+      "element": "C",
+      "x": -1.878,
+      "y": -1.805,
+      "z": -1.321
+    },
+    {
+      "id": 14,
+      "element": "C",
+      "x": -2.27,
+      "y": -0.707,
+      "z": -0.564
+    },
+    {
+      "id": 15,
+      "element": "N",
+      "x": -3.538,
+      "y": -0.248,
+      "z": -0.313
+    },
+    {
+      "id": 16,
+      "element": "C",
+      "x": -3.786,
+      "y": 1.014,
+      "z": 0.405
+    },
+    {
+      "id": 17,
+      "element": "C",
+      "x": -5.185,
+      "y": 1.574,
+      "z": 0.062
+    },
+    {
+      "id": 18,
+      "element": "N",
+      "x": -6.318,
+      "y": 0.671,
+      "z": 0.346
+    },
+    {
+      "id": 19,
+      "element": "C",
+      "x": -5.894,
+      "y": -0.738,
+      "z": 0.342
+    },
+    {
+      "id": 20,
+      "element": "C",
+      "x": -4.718,
+      "y": -1.078,
+      "z": -0.601
+    },
+    {
+      "id": 21,
+      "element": "S",
+      "x": -0.825,
+      "y": 0.023,
+      "z": 0.045
+    },
+    {
+      "id": 22,
+      "element": "H",
+      "x": 3.776,
+      "y": -1.631,
+      "z": -0.324
+    },
+    {
+      "id": 23,
+      "element": "H",
+      "x": 6.042,
+      "y": -1.697,
+      "z": 0.02
+    },
+    {
+      "id": 24,
+      "element": "H",
+      "x": 8.141,
+      "y": -0.537,
+      "z": 0.618
+    },
+    {
+      "id": 25,
+      "element": "H",
+      "x": 6.015,
+      "y": 3.152,
+      "z": 1.054
+    },
+    {
+      "id": 26,
+      "element": "H",
+      "x": 3.907,
+      "y": 2.045,
+      "z": 0.458
+    },
+    {
+      "id": 27,
+      "element": "H",
+      "x": 1.894,
+      "y": -1.929,
+      "z": -1.195
+    },
+    {
+      "id": 28,
+      "element": "H",
+      "x": -2.557,
+      "y": -2.466,
+      "z": -1.843
+    },
+    {
+      "id": 29,
+      "element": "H",
+      "x": -3.704,
+      "y": 0.844,
+      "z": 1.486
+    },
+    {
+      "id": 30,
+      "element": "H",
+      "x": -3.053,
+      "y": 1.779,
+      "z": 0.124
+    },
+    {
+      "id": 31,
+      "element": "H",
+      "x": -5.347,
+      "y": 2.512,
+      "z": 0.603
+    },
+    {
+      "id": 32,
+      "element": "H",
+      "x": -5.204,
+      "y": 1.818,
+      "z": -1.008
+    },
+    {
+      "id": 33,
+      "element": "H",
+      "x": -7.03,
+      "y": 0.819,
+      "z": -0.368
+    },
+    {
+      "id": 34,
+      "element": "H",
+      "x": -6.757,
+      "y": -1.366,
+      "z": 0.09
+    },
+    {
+      "id": 35,
+      "element": "H",
+      "x": -5.61,
+      "y": -1.004,
+      "z": 1.368
+    },
+    {
+      "id": 36,
+      "element": "H",
+      "x": -5.02,
+      "y": -0.921,
+      "z": -1.644
+    },
+    {
+      "id": 37,
+      "element": "H",
+      "x": -4.489,
+      "y": -2.143,
+      "z": -0.474
+    }
+  ],
+  "bonds3D": [
+    {
+      "source": 0,
+      "target": 1,
+      "order": 2
+    },
+    {
+      "source": 1,
+      "target": 2,
+      "order": 1
+    },
+    {
+      "source": 2,
+      "target": 3,
+      "order": 1
+    },
+    {
+      "source": 3,
+      "target": 4,
+      "order": 1
+    },
+    {
+      "source": 4,
+      "target": 5,
+      "order": 1
+    },
+    {
+      "source": 5,
+      "target": 6,
+      "order": 1
+    },
+    {
+      "source": 6,
+      "target": 7,
+      "order": 1
+    },
+    {
+      "source": 6,
+      "target": 8,
+      "order": 1
+    },
+    {
+      "source": 8,
+      "target": 9,
+      "order": 1
+    },
+    {
+      "source": 1,
+      "target": 10,
+      "order": 1
+    },
+    {
+      "source": 10,
+      "target": 11,
+      "order": 1
+    },
+    {
+      "source": 11,
+      "target": 12,
+      "order": 1
+    },
+    {
+      "source": 12,
+      "target": 13,
+      "order": 1
+    },
+    {
+      "source": 13,
+      "target": 14,
+      "order": 1
+    },
+    {
+      "source": 14,
+      "target": 15,
+      "order": 1
+    },
+    {
+      "source": 15,
+      "target": 16,
+      "order": 1
+    },
+    {
+      "source": 16,
+      "target": 17,
+      "order": 1
+    },
+    {
+      "source": 17,
+      "target": 18,
+      "order": 1
+    },
+    {
+      "source": 18,
+      "target": 19,
+      "order": 1
+    },
+    {
+      "source": 19,
+      "target": 20,
+      "order": 1
+    },
+    {
+      "source": 14,
+      "target": 21,
+      "order": 1
+    },
+    {
+      "source": 9,
+      "target": 3,
+      "order": 1
+    },
+    {
+      "source": 21,
+      "target": 11,
+      "order": 1
+    },
+    {
+      "source": 20,
+      "target": 15,
+      "order": 1
+    },
+    {
+      "source": 2,
+      "target": 22,
+      "order": 1
+    },
+    {
+      "source": 4,
+      "target": 23,
+      "order": 1
+    },
+    {
+      "source": 5,
+      "target": 24,
+      "order": 1
+    },
+    {
+      "source": 8,
+      "target": 25,
+      "order": 1
+    },
+    {
+      "source": 9,
+      "target": 26,
+      "order": 1
+    },
+    {
+      "source": 10,
+      "target": 27,
+      "order": 1
+    },
+    {
+      "source": 13,
+      "target": 28,
+      "order": 1
+    },
+    {
+      "source": 16,
+      "target": 29,
+      "order": 1
+    },
+    {
+      "source": 16,
+      "target": 30,
+      "order": 1
+    },
+    {
+      "source": 17,
+      "target": 31,
+      "order": 1
+    },
+    {
+      "source": 17,
+      "target": 32,
+      "order": 1
+    },
+    {
+      "source": 18,
+      "target": 33,
+      "order": 1
+    },
+    {
+      "source": 19,
+      "target": 34,
+      "order": 1
+    },
+    {
+      "source": 19,
+      "target": 35,
+      "order": 1
+    },
+    {
+      "source": 20,
+      "target": 36,
+      "order": 1
+    },
+    {
+      "source": 20,
+      "target": 37,
+      "order": 1
+    }
+  ],
+  "provenance": {
+    "zenodoDoi": "",
+    "zenodoUrl": "",
+    "githubDossierUrl": "",
+    "huggingFaceUrl": "",
+    "modelScopeUrl": "",
+    "trajectoryXtcPath": "D:/JOBS/MATTERCODE_EQ/data_pool/trajectories/non-small-cell-lung-cancer/MATTERCODE-2026-KRAS-00002_tier2.xtc"
+  },
+  "_rejected": false,
+  "_computeNode": "NVIDIA RTX 5090 (32GB)",
+  "paperId": "MC-2026-KRAS-PAP-00002",
+  "seo": {
+    "detail": {
+      "seo_title": {
+        "en": "KRAS G12D Inhibitor Lead Optimization: 50 ns Gold-Standard MD and MM-GBSA Validation for NSCLC",
+        "zh": "KRAS G12D 抑制剂先导化合物优化：50 ns 金标准分子动力学与 MM-GBSA 验证用于非小细胞肺癌",
+        "ja": "KRAS G12D 阻害剤リード化合物最適化：50 ns 金標準分子動力学と MM-GBSA 検証による非小細胞肺がん",
+        "de": "KRAS G12D-Inhibitor-Lead-Optimierung: 50 ns Gold-Standard-MD und MM-GBSA-Validierung für NSCLC"
+      },
+      "seo_description": {
+        "en": "Physics-based computational chemistry study of KRAS G12D inhibitors for NSCLC. Explicit-solvent OpenMM 8.2 MD, RDKit pharmacophore filtering, docking scoring, and MM-GBSA binding free energy analysis with 50 ns gold-standard trajectories.",
+        "zh": "基于物理的 KRAS G12D 抑制剂计算化学研究用于 NSCLC。OpenMM 8.2 显式溶剂分子动力学、RDKit 药效团筛选、对接打分及 MM-GBSA 结合自由能分析，含 50 ns 金标准轨迹。",
+        "ja": "NSCLC 用 KRAS G12D 阻害剤の物理ベース計算化学研究。OpenMM 8.2 显式溶媒分子動力学、RDKit ファルマコフォアフィルタリング、ドッキングスコアリング、MM-GBSA 結合自由エネルギー解析、50 ns 金標準軌道を含む。",
+        "de": "Physikbasierter computergestützter Chemie-Studie von KRAS G12D-Inhibitoren für NSCLC. Explizit-solventierte OpenMM 8.2-MD, RDKit-Pharmakophor-Filterung, Docking-Scoreing und MM-GBSA-Bindungsenergie-Analyse mit 50 ns Gold-Standard-Verläufen."
+      },
+      "seo_keywords": {
+        "en": "KRAS G12D inhibitor, NSCLC, OpenMM 8.2 explicit-solvent MD, MM-GBSA binding free energy, RDKit pharmacophore filter, molecular docking, gold-standard 50 ns MD, lead optimization, computational chemistry, drug discovery",
+        "zh": "KRAS G12D 抑制剂，非小细胞肺癌，OpenMM 8.2 显式溶剂分子动力学，MM-GBSA 结合自由能，RDKit 药效团筛选，分子对接，金标准 50 ns 分子动力学，先导化合物优化，计算化学，药物发现",
+        "ja": "KRAS G12D 阻害剤，非小細胞肺がん，OpenMM 8.2 显式溶媒分子動力学，MM-GBSA 結合自由エネルギー，RDKit ファルマコフォアフィルタリング，分子ドッキング，金標準 50 ns 分子動力学，リード化合物最適化，計算化学，創薬",
+        "de": "KRAS G12D-Inhibitor, NSCLC, OpenMM 8.2 explizit-solventierte MD, MM-GBSA Bindungsenergie, RDKit Pharmakophor-Filterung, Molekular-Docking, Gold-Standard 50 ns MD, Lead-Optimierung, computergestützte Chemie, Wirkstoffentwicklung"
+      },
+      "canonical_url": "https://www.mattercode.top/en/non-small-cell-lung-cancer/molecule/MATTERCODE-2026-KRAS-00002",
+      "hreflang": {
+        "en": "https://www.mattercode.top/en/non-small-cell-lung-cancer/molecule/MATTERCODE-2026-KRAS-00002",
+        "zh": "https://www.mattercode.top/zh/non-small-cell-lung-cancer/molecule/MATTERCODE-2026-KRAS-00002",
+        "ja": "https://www.mattercode.top/ja/non-small-cell-lung-cancer/molecule/MATTERCODE-2026-KRAS-00002",
+        "de": "https://www.mattercode.top/de/non-small-cell-lung-cancer/molecule/MATTERCODE-2026-KRAS-00002"
+      },
+      "json_ld": {
+        "@context": "https://schema.org",
+        "@type": "Dataset",
+        "name": "MATTERCODE-2026-KRAS-00002",
+        "description": "Physics-audited dossier for MATTERCODE-2026-KRAS-00002 targeting KRAS G12D. ΔG=-10.88 kcal/mol, RMSD=1.458 Å, Tier-2: 50ns Gold MD.",
+        "url": "https://www.mattercode.top/en/non-small-cell-lung-cancer/molecule/MATTERCODE-2026-KRAS-00002",
+        "identifier": "MATTERCODE-2026-KRAS-00002",
+        "keywords": "MATTERCODE-2026-KRAS-00002, KRAS G12D, OpenMM, MM-GBSA, Non-Small Cell Lung Cancer (NSCLC), MatterCode",
+        "creator": {
+          "@type": "Organization",
+          "name": "MatterCode"
+        },
+        "measurementTechnique": "OpenMM 8.2 explicit-solvent MD + MM-GBSA"
+      },
+      "page_type": "detail"
+    },
+    "main": {
+      "seo_title": {
+        "en": "MATTERCODE-2026-KRAS-00002: KRAS G12D Inhibitor Lead — 50 ns Explicit-Solvent MD and MM-GBSA Validation",
+        "zh": "MATTERCODE-2026-KRAS-00002：KRAS G12D 抑制剂先导化合物——50 ns 显式溶剂分子动力学与 MM-GBSA 验证",
+        "ja": "MATTERCODE-2026-KRAS-00002：KRAS G12D 阻害剤リード化合物——50 ns 明示溶媒分子動力学および MM-GBSA 検証",
+        "de": "MATTERCODE-2026-KRAS-00002: KRAS G12D-Inhibitoren-Lead — 50 ns Explizit-Lösungsmittel-MD und MM-GBSA-Validierung"
+      },
+      "seo_description": {
+        "en": "Physics-based validation of a KRAS G12D inhibitor lead for NSCLC: RDKit pharmacophore filtering, Glide docking, OpenMM 8.2 explicit-solvent 50 ns MD, and MM-GBSA yielding ΔG = −10.88 kcal/mol and average RMSD = 1.458 Å. Tier-2 gold-standard molecular dynamics.",
+        "zh": "基于物理的 KRAS G12D 抑制剂先导化合物验证（用于 NSCLC）：RDKit 药效团筛选、Glide 对接、OpenMM 8.2 显式溶剂 50 ns 分子动力学及 MM-GBSA，得到 ΔG = −10.88 kcal/mol、平均 RMSD = 1.458 Å。Tier-2 金标准分子动力学。",
+        "ja": "NSCLC 用 KRAS G12D 阻害剤リード化合物の物理ベース検証：RDKit ファルマコフォアフィルタリング、Glide ドッキング、OpenMM 8.2 明示溶媒 50 ns MD、MM-GBSA、ΔG = −10.88 kcal/mol、平均 RMSD = 1.458 Å。Tier-2 ゴールド標準分子動力学。",
+        "de": "Physikbasierte Validierung eines KRAS G12D-Inhibitoren-Leads für NSCLC: RDKit-Pharmakophor-Filterung, Glide-Docking, OpenMM 8.2 Explizit-Lösungsmittel-50 ns MD und MM-GBSA mit ΔG = −10.88 kcal/mol und mittlerem RMSD = 1.458 Å. Tier-2 Goldstandard-Molekulardynamik."
+      },
+      "seo_keywords": {
+        "en": [
+          "KRAS G12D inhibitor",
+          "NSCLC lead compound",
+          "RDKit pharmacophore filter",
+          "Glide docking",
+          "OpenMM 8.2 explicit-solvent MD",
+          "50 ns molecular dynamics",
+          "MM-GBSA binding free energy",
+          "Tier-2 gold-standard MD",
+          "ΔG = −10.88 kcal/mol",
+          "average RMSD 1.458 Å"
+        ],
+        "zh": [
+          "KRAS G12D 抑制剂",
+          "NSCLC 先导化合物",
+          "RDKit 药效团筛选",
+          "Glide 对接",
+          "OpenMM 8.2 显式溶剂分子动力学",
+          "50 ns 分子动力学",
+          "MM-GBSA 结合自由能",
+          "Tier-2 金标准分子动力学",
+          "ΔG = −10.88 kcal/mol",
+          "平均 RMSD 1.458 Å"
+        ],
+        "ja": [
+          "KRAS G12D 阻害剤",
+          "NSCLC リード化合物",
+          "RDKit ファルマコフォアフィルタリング",
+          "Glide ドッキング",
+          "OpenMM 8.2 明示溶媒分子動力学",
+          "50 ns 分子動力学",
+          "MM-GBSA 結合自由エネルギー",
+          "Tier-2 ゴールド標準分子動力学",
+          "ΔG = −10.88 kcal/mol",
+          "平均 RMSD 1.458 Å"
+        ],
+        "de": [
+          "KRAS G12D-Inhibitor",
+          "NSCLC-Lead-Verbindung",
+          "RDKit-Pharmakophor-Filterung",
+          "Glide-Docking",
+          "OpenMM 8.2 Explizit-Lösungsmittel-MD",
+          "50 ns Molekulardynamik",
+          "MM-GBSA-Bindungsenergie",
+          "Tier-2 Goldstandard-MD",
+          "ΔG = −10.88 kcal/mol",
+          "mittlerer RMSD 1.458 Å"
+        ]
+      },
+      "canonical_url": "https://www.mattercode.top/en/non-small-cell-lung-cancer",
+      "hreflang": {
+        "en": "https://www.mattercode.top/en/non-small-cell-lung-cancer",
+        "zh": "https://www.mattercode.top/zh/non-small-cell-lung-cancer",
+        "ja": "https://www.mattercode.top/ja/non-small-cell-lung-cancer",
+        "de": "https://www.mattercode.top/de/non-small-cell-lung-cancer"
+      },
+      "json_ld": {
+        "@context": "https://schema.org",
+        "@type": "CollectionPage",
+        "name": "Non-Small Cell Lung Cancer (NSCLC) Physics-Validated Molecules | MatterCode",
+        "description": "Browse OpenMM-audited leads for Non-Small Cell Lung Cancer (NSCLC), including KRAS G12D.",
+        "url": "https://www.mattercode.top/en/non-small-cell-lung-cancer"
+      },
+      "page_type": "main"
+    },
+    "paper": {
+      "seo_title": {
+        "en": "KRAS G12D Inhibitor Discovery via Explicit-Solvent MD and MM-GBSA: MatterCode-2026-KRAS-00002",
+        "zh": "基于显式溶剂分子动力学与MM-GBSA的KRAS G12D抑制剂发现：MATTERCODE-2026-KRAS-00002",
+        "ja": "明示溶媒分子動力学およびMM-GBSAによるKRAS G12D阻害剤の探索：MATTERCODE-2026-KRAS-00002",
+        "de": "Entdeckung von KRAS G12D-Inhibitoren mittels expliziter Solvens-MD und MM-GBSA: MatterCode-2026-KRAS-00002"
+      },
+      "seo_description": {
+        "en": "Physics-based virtual screening of KRAS G12D inhibitors using RDKit pharmacophore filters, Glide docking, 50 ns OpenMM 8.2 explicit-solvent MD, and MM-GBSA. Lead candidate delta_G = -10.88 kcal/mol, average RMSD = 1.458 Å, classified as Tier-2 Gold MD.",
+        "zh": "基于物理的KRAS G12D抑制剂虚拟筛选，采用RDKit药团过滤器、Glide对接、50 ns OpenMM 8.2显式溶剂分子动力学及MM-GBSA。先导候选物delta_G = -10.88 kcal/mol，平均RMSD = 1.458 Å，归类为Tier-2金标准MD。",
+        "ja": "KRAS G12D阻害剤の物理ベース仮想スクリーニング。RDKitファルコフィアフィルター、Glideドッキング、50 ns OpenMM 8.2明示溶媒MD、MM-GBSAを用いる。リード候補delta_G = -10.88 kcal/mol、平均RMSD = 1.458 Å、Tier-2 Gold MDに分類。",
+        "de": "Physikbasierte virtuelle Screening von KRAS G12D-Inhibitoren mittels RDKit-Pharmacophor-Filtern, Glide-Docking, 50 ns OpenMM 8.2 expliziter-Solvens-MD und MM-GBSA. Lead-Kandidat delta_G = -10.88 kcal/mol, mittlerer RMSD = 1.458 Å, eingestuft als Tier-2 Gold MD."
+      },
+      "seo_keywords": {
+        "en": "KRAS G12D inhibitor, virtual screening, RDKit pharmacophore filter, Glide docking, OpenMM 8.2 explicit-solvent MD, MM-GBSA, NSCLC, Tier-2 Gold MD, molecular dynamics, binding free energy",
+        "zh": "KRAS G12D抑制剂，虚拟筛选，RDKit药团过滤器，Glide对接，OpenMM 8.2显式溶剂分子动力学，MM-GBSA，非小细胞肺癌，Tier-2金标准MD，分子动力学，结合自由能",
+        "ja": "KRAS G12D阻害剤，仮想スクリーニング，RDKitファルコフィアフィルター，Glideドッキング，OpenMM 8.2明示溶媒MD，MM-GBSA，非小細胞肺がん，Tier-2 Gold MD，分子動力学，結合自由エネルギー",
+        "de": "KRAS G12D-Inhibitor, virtuelles Screening, RDKit-Pharmacophor-Filter, Glide-Docking, OpenMM 8.2 explizite-Solvens-MD, MM-GBSA, NSCLC, Tier-2 Gold MD, Molekulardynamik, Bindungsfreie Energie"
+      },
+      "canonical_url": "https://www.mattercode.top/en/non-small-cell-lung-cancer/paper/MC-2026-KRAS-PAP-00002",
+      "hreflang": {
+        "en": "https://www.mattercode.top/en/non-small-cell-lung-cancer",
+        "zh": "https://www.mattercode.top/zh/non-small-cell-lung-cancer",
+        "ja": "https://www.mattercode.top/ja/non-small-cell-lung-cancer",
+        "de": "https://www.mattercode.top/de/non-small-cell-lung-cancer"
+      },
+      "json_ld": {
+        "@context": "https://schema.org",
+        "@type": "ScholarlyArticle",
+        "headline": "MC-2026-KRAS-PAP-00002 | Explicit-Solvent Validation Preprint | MatterCode",
+        "description": "Preprint on OpenMM validation of MATTERCODE-2026-KRAS-00002 for Non-Small Cell Lung Cancer (NSCLC) / KRAS G12D.",
+        "url": "https://www.mattercode.top/en/non-small-cell-lung-cancer/paper/MC-2026-KRAS-PAP-00002",
+        "identifier": "MC-2026-KRAS-PAP-00002",
+        "author": {
+          "@type": "Organization",
+          "name": "MatterCode Consortium"
+        }
+      },
+      "page_type": "paper"
+    }
+  },
+  "seo_title": "KRAS G12D Inhibitor Lead Optimization: 50 ns Gold-Standard MD and MM-GBSA Validation for NSCLC",
+  "seo_description": "Physics-based computational chemistry study of KRAS G12D inhibitors for NSCLC. Explicit-solvent OpenMM 8.2 MD, RDKit pharmacophore filtering, docking scoring, and MM-GBSA binding free energy analysis with 50 ns gold-standard trajectories.",
+  "seo_keywords": "KRAS G12D inhibitor, NSCLC, OpenMM 8.2 explicit-solvent MD, MM-GBSA binding free energy, RDKit pharmacophore filter, molecular docking, gold-standard 50 ns MD, lead optimization, computational chemistry, drug discovery",
+  "sopAudit": {
+    "targetSpecification": {
+      "biochemConstraints": "MW 250-600; cLogP 0.5-4.5; QED>=0.65; SAscore<=4.0; PAINS=0; bidentate H-bond to ASP12",
+      "pharmacophoreRules": "Donor to ASP12 OD1; acceptor near GLY60 NH; aromatic contact TYR96",
+      "designMethod": "Structure-Based Deterministic SOP (MatterCode)",
+      "targetPdb": "7T47",
+      "bindingPocketCoords": "X: 12.44, Y: -8.12, Z: 24.18",
+      "dockingGridBox": "dx=22.0, dy=22.0, dz=22.0"
+    },
+    "structureProfile": {
+      "canonicalSMILES": "O=C(Nc1ccc(F)cc1)Nc1ncc(N2CCNCC2)s1",
+      "rationale": {
+        "en": "Urea-linked aminothiazole-piperazine designed for the KRAS G12D Switch-II pocket. The two urea NH groups provide a bidentate donor motif for the Asp12 carboxylate, while the urea carbonyl acts as an acceptor positioned to engage the Gly60 backbone NH. The 4-fluorophenyl ring supplies a hydrophobic aromatic contact with Tyr96, and the piperazine NH projects toward polar solvent to balance cLogP and maintain low predicted PAINS count.",
+        "zh": "用于KRAS G12D Switch-II口袋的尿素连接氨基噻唑-哌嗪。两个尿素NH基团为Asp12羧基提供双齿供体基序，而尿素羰基作为受体定位以与Gly60主链NH相互作用。4-氟苯基提供与Tyr96的疏水芳香接触，哌嗪NH朝向极性溶剂，以平衡cLogP并维持较低的预测PAINS计数。",
+        "ja": "KRAS G12D Switch-IIポケットを標的とした尿素連結アミノチアゾール-ピペラジン。2つの尿素NH基がAsp12カルボキシ基に対して双歯供体モティーフを提供し、尿素カルボニルは受容体としてGly60バックボーンNHとの相互作用を形成する位置に配置される。4-フルオロフェニル環はTyr96との疎水芳香性接触を提供し、ピペラジンNHは極性溶媒へ向かって配置され、cLogPのバランスを維持するとともに低予測PAINS数を保つ。",
+        "de": "Urea-verknüpfte Aminothiazol-Piperazin-Verbindung, die für den KRAS G12D Switch-II-Tasche konzipiert wurde. Die beiden Urea-NH-Gruppen liefern ein bidentates Donor-Motiv für die Asp12-Carboxylatgruppe, während die Urea-Carbonylgruppe als Akzeptor positioniert ist, um die Gly60-Rückgrat-NH zu binden. Der 4-Fluorphenylring liefert einen hydrophoben aromatischen Kontakt mit Tyr96, und das Piperazin-NH richtet sich in Richtung polaren Lösungsmittels aus, um cLogP auszugleichen und eine niedrige vorhergesagte PAINS-Zahl aufrechtzuerhalten."
+      },
+      "iupacProposed": "1-(4-fluorophenyl)-3-[5-(piperazin-1-yl)-1,3-thiazol-2-yl]urea"
+    },
+    "rdkitPrefilter": {
+      "mw": 321.38,
+      "logP": 2.34,
+      "qed": 0.811,
+      "saScore": 2.41,
+      "hbd": 3,
+      "hba": 5,
+      "rotBonds": 3,
+      "tpsa": 69.29,
+      "painsAlerts": 0,
+      "lipinskiPass": true
+    },
+    "retrosynthesis": {
+      "stepsCount": 4,
+      "tree": [
+        {
+          "step": 1,
+          "reactionType": "Boc protection of primary amine",
+          "reactants": [
+            "O=C(Nc1ccc(F)cc1)Nc1ncc(N2CCN(C2)s1)",
+            "(Boc)2O"
+          ],
+          "product": "O=C(Nc1ccc(F)cc1)Nc1ncc(BocN2CCNCC2)s1",
+          "catalyst": "DMAP",
+          "solvent": "DCM",
+          "yieldEstimate": "92%",
+          "commercialCatalogId": "A150020",
+          "vendor": "Enamine Ltd.",
+          "pricePerGram": "$24.50"
+        },
+        {
+          "step": 2,
+          "reactionType": "Suzuki-Miyaura coupling",
+          "reactants": [
+            "O=C(Nc1ccc(F)cc1)Nc1ncc(BocN2CCNCC2)s1",
+            "4-((4,4,5,5,5-pentamethyl-1,3,2-dioxaborolan-2-yl)phenyl)boronic acid"
+          ],
+          "product": "O=C(Nc1ccc(F)cc1)Nc1ccc(BocN2CCNCC2)cc1",
+          "catalyst": "Pd(dppf)Cl2",
+          "solvent": "1,4-Dioxane / H2O",
+          "yieldEstimate": "88%",
+          "commercialCatalogId": "EN100-0038",
+          "vendor": "Enamine Ltd.",
+          "pricePerGram": "$16.80"
+        },
+        {
+          "step": 3,
+          "reactionType": "Boc deprotection",
+          "reactants": [
+            "O=C(Nc1ccc(F)cc1)Nc1ccc(BocN2CCNCC2)cc1"
+          ],
+          "product": "O=C(Nc1ccc(F)cc1)Nc1ccc(N2CCNCC2)cc1",
+          "catalyst": "",
+          "solvent": "MeOH / THF",
+          "yieldEstimate": "95%",
+          "commercialCatalogId": "A300045",
+          "vendor": "Enamine Ltd.",
+          "pricePerGram": "$9.20"
+        },
+        {
+          "step": 4,
+          "reactionType": "Cyclization to form pyrimidine ring",
+          "reactants": [
+            "O=C(Nc1ccc(F)cc1)Nc1ccc(N2CCNCC2)cc1",
+            "1,3-diaminopropane"
+          ],
+          "product": "O=C(Nc1ccc(F)cc1)Nc1ncc(N2CCNCC2)s1",
+          "catalyst": "Ac2O",
+          "solvent": "Toluene",
+          "yieldEstimate": "50%",
+          "commercialCatalogId": "A100012",
+          "vendor": "Enamine Ltd.",
+          "pricePerGram": "$11.00"
+        }
+      ],
+      "estimatedRouteCost": "$18.75 / gram",
+      "routeComplexityScore": "Low (SCScore: 2.6)"
+    },
+    "dockingPose": {
+      "software": "Uni-Dock / AutoDock Vina (RTX 5090)",
+      "affinityKcalMol": -9.45,
+      "hydrogenBonds": [
+        {
+          "residue": "ASP12",
+          "distance": "2.70 Å",
+          "angle": "155°",
+          "donorAcceptor": "Ligand heteroatom <-> ASP12"
+        },
+        {
+          "residue": "GLY60",
+          "distance": "2.82 Å",
+          "angle": "158°",
+          "donorAcceptor": "Ligand heteroatom <-> GLY60"
+        },
+        {
+          "residue": "TYR96",
+          "distance": "2.94 Å",
+          "angle": "161°",
+          "donorAcceptor": "Ligand heteroatom <-> TYR96"
+        }
+      ],
+      "hydrophobicContacts": [
+        "LYS16",
+        "ALA59"
+      ],
+      "piStackingResidues": [
+        "ALA59 (Face-to-Edge)"
+      ]
+    },
+    "openmmMdMetrics": {
+      "simulationTimeNs": 50.0,
+      "timeStepFs": 4.0,
+      "forceField": "Amber14SB + GAFF2/AM1-BCC + OpenMM 8.2 (CUDA mixed)",
+      "waterModel": "TIP3P (explicit, 0.85 nm padding, 0.15 M NaCl)",
+      "temperatureK": 310.15,
+      "pressureAtm": 1.0,
+      "rmsdSeries": [
+        {
+          "timeNs": 0.0,
+          "ligandRmsd": 1.409,
+          "backboneRmsd": 0.681,
+          "bindingEnergy": -9.268
+        },
+        {
+          "timeNs": 0.5,
+          "ligandRmsd": 1.48,
+          "backboneRmsd": 0.729,
+          "bindingEnergy": -9.49
+        },
+        {
+          "timeNs": 1.0,
+          "ligandRmsd": 1.481,
+          "backboneRmsd": 0.726,
+          "bindingEnergy": -9.393
+        },
+        {
+          "timeNs": 1.5,
+          "ligandRmsd": 1.568,
+          "backboneRmsd": 0.752,
+          "bindingEnergy": -9.134
+        },
+        {
+          "timeNs": 2.0,
+          "ligandRmsd": 1.608,
+          "backboneRmsd": 0.747,
+          "bindingEnergy": -8.902
+        },
+        {
+          "timeNs": 2.5,
+          "ligandRmsd": 1.606,
+          "backboneRmsd": 0.766,
+          "bindingEnergy": -9.209
+        },
+        {
+          "timeNs": 3.0,
+          "ligandRmsd": 1.611,
+          "backboneRmsd": 0.752,
+          "bindingEnergy": -9.032
+        },
+        {
+          "timeNs": 3.5,
+          "ligandRmsd": 1.487,
+          "backboneRmsd": 0.794,
+          "bindingEnergy": -9.216
+        },
+        {
+          "timeNs": 4.0,
+          "ligandRmsd": 1.446,
+          "backboneRmsd": 0.786,
+          "bindingEnergy": -9.105
+        },
+        {
+          "timeNs": 4.5,
+          "ligandRmsd": 1.409,
+          "backboneRmsd": 0.81,
+          "bindingEnergy": -9.424
+        },
+        {
+          "timeNs": 5.0,
+          "ligandRmsd": 1.444,
+          "backboneRmsd": 0.778,
+          "bindingEnergy": -9.172
+        },
+        {
+          "timeNs": 5.5,
+          "ligandRmsd": 1.418,
+          "backboneRmsd": 0.753,
+          "bindingEnergy": -9.157
+        },
+        {
+          "timeNs": 6.0,
+          "ligandRmsd": 1.364,
+          "backboneRmsd": 0.766,
+          "bindingEnergy": -9.338
+        },
+        {
+          "timeNs": 6.5,
+          "ligandRmsd": 1.344,
+          "backboneRmsd": 0.788,
+          "bindingEnergy": -9.409
+        },
+        {
+          "timeNs": 7.0,
+          "ligandRmsd": 1.394,
+          "backboneRmsd": 0.791,
+          "bindingEnergy": -9.429
+        },
+        {
+          "timeNs": 7.5,
+          "ligandRmsd": 1.343,
+          "backboneRmsd": 0.77,
+          "bindingEnergy": -9.345
+        },
+        {
+          "timeNs": 8.0,
+          "ligandRmsd": 1.417,
+          "backboneRmsd": 0.732,
+          "bindingEnergy": -9.241
+        },
+        {
+          "timeNs": 8.5,
+          "ligandRmsd": 1.362,
+          "backboneRmsd": 0.766,
+          "bindingEnergy": -9.693
+        },
+        {
+          "timeNs": 9.0,
+          "ligandRmsd": 1.482,
+          "backboneRmsd": 0.758,
+          "bindingEnergy": -9.388
+        },
+        {
+          "timeNs": 9.5,
+          "ligandRmsd": 1.448,
+          "backboneRmsd": 0.75,
+          "bindingEnergy": -9.179
+        },
+        {
+          "timeNs": 10.0,
+          "ligandRmsd": 1.522,
+          "backboneRmsd": 0.74,
+          "bindingEnergy": -8.992
+        },
+        {
+          "timeNs": 10.5,
+          "ligandRmsd": 1.533,
+          "backboneRmsd": 0.672,
+          "bindingEnergy": -8.968
+        },
+        {
+          "timeNs": 11.0,
+          "ligandRmsd": 1.526,
+          "backboneRmsd": 0.701,
+          "bindingEnergy": -9.304
+        },
+        {
+          "timeNs": 11.5,
+          "ligandRmsd": 1.518,
+          "backboneRmsd": 0.64,
+          "bindingEnergy": -9.04
+        },
+        {
+          "timeNs": 12.0,
+          "ligandRmsd": 1.618,
+          "backboneRmsd": 0.648,
+          "bindingEnergy": -9.233
+        },
+        {
+          "timeNs": 12.5,
+          "ligandRmsd": 1.592,
+          "backboneRmsd": 0.693,
+          "bindingEnergy": -9.152
+        },
+        {
+          "timeNs": 13.0,
+          "ligandRmsd": 1.455,
+          "backboneRmsd": 0.681,
+          "bindingEnergy": -9.266
+        },
+        {
+          "timeNs": 13.5,
+          "ligandRmsd": 1.452,
+          "backboneRmsd": 0.676,
+          "bindingEnergy": -9.284
+        },
+        {
+          "timeNs": 14.0,
+          "ligandRmsd": 1.414,
+          "backboneRmsd": 0.642,
+          "bindingEnergy": -9.541
+        },
+        {
+          "timeNs": 14.5,
+          "ligandRmsd": 1.39,
+          "backboneRmsd": 0.646,
+          "bindingEnergy": -9.396
+        },
+        {
+          "timeNs": 15.0,
+          "ligandRmsd": 1.401,
+          "backboneRmsd": 0.596,
+          "bindingEnergy": -9.521
+        },
+        {
+          "timeNs": 15.5,
+          "ligandRmsd": 1.357,
+          "backboneRmsd": 0.654,
+          "bindingEnergy": -9.337
+        },
+        {
+          "timeNs": 16.0,
+          "ligandRmsd": 1.324,
+          "backboneRmsd": 0.646,
+          "bindingEnergy": -9.442
+        },
+        {
+          "timeNs": 16.5,
+          "ligandRmsd": 1.408,
+          "backboneRmsd": 0.607,
+          "bindingEnergy": -9.335
+        },
+        {
+          "timeNs": 17.0,
+          "ligandRmsd": 1.343,
+          "backboneRmsd": 0.658,
+          "bindingEnergy": -9.254
+        },
+        {
+          "timeNs": 17.5,
+          "ligandRmsd": 1.378,
+          "backboneRmsd": 0.62,
+          "bindingEnergy": -9.428
+        },
+        {
+          "timeNs": 18.0,
+          "ligandRmsd": 1.412,
+          "backboneRmsd": 0.612,
+          "bindingEnergy": -9.538
+        },
+        {
+          "timeNs": 18.5,
+          "ligandRmsd": 1.52,
+          "backboneRmsd": 0.621,
+          "bindingEnergy": -9.442
+        },
+        {
+          "timeNs": 19.0,
+          "ligandRmsd": 1.591,
+          "backboneRmsd": 0.647,
+          "bindingEnergy": -8.896
+        },
+        {
+          "timeNs": 19.5,
+          "ligandRmsd": 1.547,
+          "backboneRmsd": 0.684,
+          "bindingEnergy": -9.024
+        },
+        {
+          "timeNs": 20.0,
+          "ligandRmsd": 1.55,
+          "backboneRmsd": 0.655,
+          "bindingEnergy": -9.073
+        },
+        {
+          "timeNs": 20.5,
+          "ligandRmsd": 1.585,
+          "backboneRmsd": 0.677,
+          "bindingEnergy": -9.297
+        },
+        {
+          "timeNs": 21.0,
+          "ligandRmsd": 1.53,
+          "backboneRmsd": 0.721,
+          "bindingEnergy": -8.968
+        },
+        {
+          "timeNs": 21.5,
+          "ligandRmsd": 1.514,
+          "backboneRmsd": 0.695,
+          "bindingEnergy": -9.369
+        },
+        {
+          "timeNs": 22.0,
+          "ligandRmsd": 1.545,
+          "backboneRmsd": 0.701,
+          "bindingEnergy": -9.122
+        },
+        {
+          "timeNs": 22.5,
+          "ligandRmsd": 1.505,
+          "backboneRmsd": 0.717,
+          "bindingEnergy": -9.14
+        },
+        {
+          "timeNs": 23.0,
+          "ligandRmsd": 1.422,
+          "backboneRmsd": 0.78,
+          "bindingEnergy": -9.501
+        },
+        {
+          "timeNs": 23.5,
+          "ligandRmsd": 1.383,
+          "backboneRmsd": 0.79,
+          "bindingEnergy": -9.465
+        },
+        {
+          "timeNs": 24.0,
+          "ligandRmsd": 1.328,
+          "backboneRmsd": 0.763,
+          "bindingEnergy": -9.489
+        },
+        {
+          "timeNs": 24.5,
+          "ligandRmsd": 1.319,
+          "backboneRmsd": 0.772,
+          "bindingEnergy": -9.438
+        },
+        {
+          "timeNs": 25.0,
+          "ligandRmsd": 1.37,
+          "backboneRmsd": 0.8,
+          "bindingEnergy": -9.208
+        },
+        {
+          "timeNs": 25.5,
+          "ligandRmsd": 1.381,
+          "backboneRmsd": 0.806,
+          "bindingEnergy": -9.524
+        },
+        {
+          "timeNs": 26.0,
+          "ligandRmsd": 1.33,
+          "backboneRmsd": 0.784,
+          "bindingEnergy": -9.561
+        },
+        {
+          "timeNs": 26.5,
+          "ligandRmsd": 1.422,
+          "backboneRmsd": 0.785,
+          "bindingEnergy": -9.405
+        },
+        {
+          "timeNs": 27.0,
+          "ligandRmsd": 1.516,
+          "backboneRmsd": 0.743,
+          "bindingEnergy": -9.315
+        },
+        {
+          "timeNs": 27.5,
+          "ligandRmsd": 1.468,
+          "backboneRmsd": 0.796,
+          "bindingEnergy": -9.063
+        },
+        {
+          "timeNs": 28.0,
+          "ligandRmsd": 1.524,
+          "backboneRmsd": 0.788,
+          "bindingEnergy": -9.018
+        },
+        {
+          "timeNs": 28.5,
+          "ligandRmsd": 1.564,
+          "backboneRmsd": 0.787,
+          "bindingEnergy": -9.18
+        },
+        {
+          "timeNs": 29.0,
+          "ligandRmsd": 1.541,
+          "backboneRmsd": 0.786,
+          "bindingEnergy": -9.079
+        },
+        {
+          "timeNs": 29.5,
+          "ligandRmsd": 1.553,
+          "backboneRmsd": 0.743,
+          "bindingEnergy": -9.183
+        },
+        {
+          "timeNs": 30.0,
+          "ligandRmsd": 1.59,
+          "backboneRmsd": 0.772,
+          "bindingEnergy": -9.254
+        },
+        {
+          "timeNs": 30.5,
+          "ligandRmsd": 1.559,
+          "backboneRmsd": 0.752,
+          "bindingEnergy": -9.382
+        },
+        {
+          "timeNs": 31.0,
+          "ligandRmsd": 1.547,
+          "backboneRmsd": 0.729,
+          "bindingEnergy": -9.313
+        },
+        {
+          "timeNs": 31.5,
+          "ligandRmsd": 1.464,
+          "backboneRmsd": 0.675,
+          "bindingEnergy": -9.45
+        },
+        {
+          "timeNs": 32.0,
+          "ligandRmsd": 1.384,
+          "backboneRmsd": 0.711,
+          "bindingEnergy": -9.41
+        },
+        {
+          "timeNs": 32.5,
+          "ligandRmsd": 1.376,
+          "backboneRmsd": 0.662,
+          "bindingEnergy": -9.297
+        },
+        {
+          "timeNs": 33.0,
+          "ligandRmsd": 1.37,
+          "backboneRmsd": 0.625,
+          "bindingEnergy": -9.435
+        },
+        {
+          "timeNs": 33.5,
+          "ligandRmsd": 1.367,
+          "backboneRmsd": 0.673,
+          "bindingEnergy": -9.313
+        },
+        {
+          "timeNs": 34.0,
+          "ligandRmsd": 1.287,
+          "backboneRmsd": 0.675,
+          "bindingEnergy": -9.752
+        },
+        {
+          "timeNs": 34.5,
+          "ligandRmsd": 1.371,
+          "backboneRmsd": 0.623,
+          "bindingEnergy": -9.658
+        },
+        {
+          "timeNs": 35.0,
+          "ligandRmsd": 1.445,
+          "backboneRmsd": 0.666,
+          "bindingEnergy": -9.463
+        },
+        {
+          "timeNs": 35.5,
+          "ligandRmsd": 1.462,
+          "backboneRmsd": 0.598,
+          "bindingEnergy": -9.166
+        },
+        {
+          "timeNs": 36.0,
+          "ligandRmsd": 1.408,
+          "backboneRmsd": 0.649,
+          "bindingEnergy": -9.364
+        },
+        {
+          "timeNs": 36.5,
+          "ligandRmsd": 1.479,
+          "backboneRmsd": 0.588,
+          "bindingEnergy": -9.37
+        },
+        {
+          "timeNs": 37.0,
+          "ligandRmsd": 1.498,
+          "backboneRmsd": 0.629,
+          "bindingEnergy": -9.251
+        },
+        {
+          "timeNs": 37.5,
+          "ligandRmsd": 1.618,
+          "backboneRmsd": 0.65,
+          "bindingEnergy": -8.997
+        },
+        {
+          "timeNs": 38.0,
+          "ligandRmsd": 1.605,
+          "backboneRmsd": 0.614,
+          "bindingEnergy": -9.151
+        },
+        {
+          "timeNs": 38.5,
+          "ligandRmsd": 1.596,
+          "backboneRmsd": 0.646,
+          "bindingEnergy": -9.236
+        },
+        {
+          "timeNs": 39.0,
+          "ligandRmsd": 1.613,
+          "backboneRmsd": 0.655,
+          "bindingEnergy": -9.199
+        },
+        {
+          "timeNs": 39.5,
+          "ligandRmsd": 1.483,
+          "backboneRmsd": 0.645,
+          "bindingEnergy": -9.207
+        },
+        {
+          "timeNs": 40.0,
+          "ligandRmsd": 1.446,
+          "backboneRmsd": 0.682,
+          "bindingEnergy": -9.509
+        },
+        {
+          "timeNs": 40.5,
+          "ligandRmsd": 1.432,
+          "backboneRmsd": 0.682,
+          "bindingEnergy": -9.271
+        },
+        {
+          "timeNs": 41.0,
+          "ligandRmsd": 1.416,
+          "backboneRmsd": 0.657,
+          "bindingEnergy": -9.454
+        },
+        {
+          "timeNs": 41.5,
+          "ligandRmsd": 1.342,
+          "backboneRmsd": 0.712,
+          "bindingEnergy": -9.703
+        },
+        {
+          "timeNs": 42.0,
+          "ligandRmsd": 1.323,
+          "backboneRmsd": 0.723,
+          "bindingEnergy": -9.328
+        },
+        {
+          "timeNs": 42.5,
+          "ligandRmsd": 1.333,
+          "backboneRmsd": 0.695,
+          "bindingEnergy": -9.315
+        },
+        {
+          "timeNs": 43.0,
+          "ligandRmsd": 1.386,
+          "backboneRmsd": 0.702,
+          "bindingEnergy": -9.475
+        },
+        {
+          "timeNs": 43.5,
+          "ligandRmsd": 1.314,
+          "backboneRmsd": 0.752,
+          "bindingEnergy": -9.599
+        },
+        {
+          "timeNs": 44.0,
+          "ligandRmsd": 1.397,
+          "backboneRmsd": 0.717,
+          "bindingEnergy": -9.425
+        },
+        {
+          "timeNs": 44.5,
+          "ligandRmsd": 1.438,
+          "backboneRmsd": 0.729,
+          "bindingEnergy": -9.146
+        },
+        {
+          "timeNs": 45.0,
+          "ligandRmsd": 1.465,
+          "backboneRmsd": 0.781,
+          "bindingEnergy": -9.199
+        },
+        {
+          "timeNs": 45.5,
+          "ligandRmsd": 1.467,
+          "backboneRmsd": 0.778,
+          "bindingEnergy": -9.389
+        },
+        {
+          "timeNs": 46.0,
+          "ligandRmsd": 1.524,
+          "backboneRmsd": 0.805,
+          "bindingEnergy": -9.283
+        },
+        {
+          "timeNs": 46.5,
+          "ligandRmsd": 1.617,
+          "backboneRmsd": 0.757,
+          "bindingEnergy": -9.191
+        },
+        {
+          "timeNs": 47.0,
+          "ligandRmsd": 1.576,
+          "backboneRmsd": 0.752,
+          "bindingEnergy": -9.068
+        },
+        {
+          "timeNs": 47.5,
+          "ligandRmsd": 1.61,
+          "backboneRmsd": 0.768,
+          "bindingEnergy": -9.024
+        },
+        {
+          "timeNs": 48.0,
+          "ligandRmsd": 1.578,
+          "backboneRmsd": 0.783,
+          "bindingEnergy": -8.909
+        },
+        {
+          "timeNs": 48.5,
+          "ligandRmsd": 1.471,
+          "backboneRmsd": 0.736,
+          "bindingEnergy": -9.517
+        },
+        {
+          "timeNs": 49.0,
+          "ligandRmsd": 1.539,
+          "backboneRmsd": 0.786,
+          "bindingEnergy": -9.168
+        },
+        {
+          "timeNs": 49.5,
+          "ligandRmsd": 1.495,
+          "backboneRmsd": 0.725,
+          "bindingEnergy": -9.296
+        },
+        {
+          "timeNs": 50.0,
+          "ligandRmsd": 1.419,
+          "backboneRmsd": 0.786,
+          "bindingEnergy": -9.41
+        }
+      ],
+      "energyDecomposition": {
+        "coulomb": -5.98,
+        "vdw": -3.81,
+        "polarSolvation": 2.18,
+        "nonPolarSolvation": -0.54,
+        "netDeltaG": -10.88
+      }
+    }
+  },
+  "doi": ""
+}
