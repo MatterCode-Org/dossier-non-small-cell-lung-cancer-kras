@@ -1,0 +1,67 @@
+{
+  "stepsCount": 4,
+  "estimatedRouteCost": "$18.75 / gram",
+  "routeComplexityScore": "Low (SCScore: 2.6)",
+  "overallYieldPercent": 52.0,
+  "tree": [
+    {
+      "step": 1,
+      "reactionType": "Boc protection of primary amine",
+      "reactants": [
+        "O=C(Nc1ccc(F)cc1)Nc1ncc(N2CCN(C2)s1)",
+        "(Boc)2O"
+      ],
+      "product": "O=C(Nc1ccc(F)cc1)Nc1ncc(BocN2CCNCC2)s1",
+      "catalyst": "DMAP",
+      "solvent": "DCM",
+      "yieldEstimate": "92%",
+      "commercialCatalogId": "A150020",
+      "vendor": "Enamine Ltd.",
+      "pricePerGram": "$24.50"
+    },
+    {
+      "step": 2,
+      "reactionType": "Suzuki-Miyaura coupling",
+      "reactants": [
+        "O=C(Nc1ccc(F)cc1)Nc1ncc(BocN2CCNCC2)s1",
+        "4-((4,4,5,5,5-pentamethyl-1,3,2-dioxaborolan-2-yl)phenyl)boronic acid"
+      ],
+      "product": "O=C(Nc1ccc(F)cc1)Nc1ccc(BocN2CCNCC2)cc1",
+      "catalyst": "Pd(dppf)Cl2",
+      "solvent": "1,4-Dioxane / H2O",
+      "yieldEstimate": "88%",
+      "commercialCatalogId": "EN100-0038",
+      "vendor": "Enamine Ltd.",
+      "pricePerGram": "$16.80"
+    },
+    {
+      "step": 3,
+      "reactionType": "Boc deprotection",
+      "reactants": [
+        "O=C(Nc1ccc(F)cc1)Nc1ccc(BocN2CCNCC2)cc1"
+      ],
+      "product": "O=C(Nc1ccc(F)cc1)Nc1ccc(N2CCNCC2)cc1",
+      "catalyst": "",
+      "solvent": "MeOH / THF",
+      "yieldEstimate": "95%",
+      "commercialCatalogId": "A300045",
+      "vendor": "Enamine Ltd.",
+      "pricePerGram": "$9.20"
+    },
+    {
+      "step": 4,
+      "reactionType": "Cyclization to form pyrimidine ring",
+      "reactants": [
+        "O=C(Nc1ccc(F)cc1)Nc1ccc(N2CCNCC2)cc1",
+        "1,3-diaminopropane"
+      ],
+      "product": "O=C(Nc1ccc(F)cc1)Nc1ncc(N2CCNCC2)s1",
+      "catalyst": "Ac2O",
+      "solvent": "Toluene",
+      "yieldEstimate": "50%",
+      "commercialCatalogId": "A100012",
+      "vendor": "Enamine Ltd.",
+      "pricePerGram": "$11.00"
+    }
+  ]
+}
