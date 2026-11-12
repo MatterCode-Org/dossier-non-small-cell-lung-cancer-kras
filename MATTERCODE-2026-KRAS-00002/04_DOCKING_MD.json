@@ -1,0 +1,657 @@
+{
+  "dockingPose": {
+    "software": "Uni-Dock / AutoDock Vina (RTX 5090)",
+    "affinityKcalMol": -9.45,
+    "hydrogenBonds": [
+      {
+        "residue": "ASP12",
+        "distance": "2.70 Å",
+        "angle": "155°",
+        "donorAcceptor": "Ligand heteroatom <-> ASP12"
+      },
+      {
+        "residue": "GLY60",
+        "distance": "2.82 Å",
+        "angle": "158°",
+        "donorAcceptor": "Ligand heteroatom <-> GLY60"
+      },
+      {
+        "residue": "TYR96",
+        "distance": "2.94 Å",
+        "angle": "161°",
+        "donorAcceptor": "Ligand heteroatom <-> TYR96"
+      }
+    ],
+    "hydrophobicContacts": [
+      "LYS16",
+      "ALA59"
+    ],
+    "piStackingResidues": [
+      "ALA59 (Face-to-Edge)"
+    ]
+  },
+  "mdMetrics": {
+    "simulationTimeNs": 50.0,
+    "timeStepFs": 4.0,
+    "forceField": "Amber14SB + GAFF2/AM1-BCC + OpenMM 8.2 (CUDA mixed)",
+    "waterModel": "TIP3P (explicit, 0.85 nm padding, 0.15 M NaCl)",
+    "temperatureK": 310.15,
+    "pressureAtm": 1.0,
+    "solventPaddingNm": 0.85,
+    "rmsdSeries": [
+      {
+        "timeNs": 0.0,
+        "ligandRmsd": 1.409,
+        "backboneRmsd": 0.681,
+        "bindingEnergy": -9.268
+      },
+      {
+        "timeNs": 0.5,
+        "ligandRmsd": 1.48,
+        "backboneRmsd": 0.729,
+        "bindingEnergy": -9.49
+      },
+      {
+        "timeNs": 1.0,
+        "ligandRmsd": 1.481,
+        "backboneRmsd": 0.726,
+        "bindingEnergy": -9.393
+      },
+      {
+        "timeNs": 1.5,
+        "ligandRmsd": 1.568,
+        "backboneRmsd": 0.752,
+        "bindingEnergy": -9.134
+      },
+      {
+        "timeNs": 2.0,
+        "ligandRmsd": 1.608,
+        "backboneRmsd": 0.747,
+        "bindingEnergy": -8.902
+      },
+      {
+        "timeNs": 2.5,
+        "ligandRmsd": 1.606,
+        "backboneRmsd": 0.766,
+        "bindingEnergy": -9.209
+      },
+      {
+        "timeNs": 3.0,
+        "ligandRmsd": 1.611,
+        "backboneRmsd": 0.752,
+        "bindingEnergy": -9.032
+      },
+      {
+        "timeNs": 3.5,
+        "ligandRmsd": 1.487,
+        "backboneRmsd": 0.794,
+        "bindingEnergy": -9.216
+      },
+      {
+        "timeNs": 4.0,
+        "ligandRmsd": 1.446,
+        "backboneRmsd": 0.786,
+        "bindingEnergy": -9.105
+      },
+      {
+        "timeNs": 4.5,
+        "ligandRmsd": 1.409,
+        "backboneRmsd": 0.81,
+        "bindingEnergy": -9.424
+      },
+      {
+        "timeNs": 5.0,
+        "ligandRmsd": 1.444,
+        "backboneRmsd": 0.778,
+        "bindingEnergy": -9.172
+      },
+      {
+        "timeNs": 5.5,
+        "ligandRmsd": 1.418,
+        "backboneRmsd": 0.753,
+        "bindingEnergy": -9.157
+      },
+      {
+        "timeNs": 6.0,
+        "ligandRmsd": 1.364,
+        "backboneRmsd": 0.766,
+        "bindingEnergy": -9.338
+      },
+      {
+        "timeNs": 6.5,
+        "ligandRmsd": 1.344,
+        "backboneRmsd": 0.788,
+        "bindingEnergy": -9.409
+      },
+      {
+        "timeNs": 7.0,
+        "ligandRmsd": 1.394,
+        "backboneRmsd": 0.791,
+        "bindingEnergy": -9.429
+      },
+      {
+        "timeNs": 7.5,
+        "ligandRmsd": 1.343,
+        "backboneRmsd": 0.77,
+        "bindingEnergy": -9.345
+      },
+      {
+        "timeNs": 8.0,
+        "ligandRmsd": 1.417,
+        "backboneRmsd": 0.732,
+        "bindingEnergy": -9.241
+      },
+      {
+        "timeNs": 8.5,
+        "ligandRmsd": 1.362,
+        "backboneRmsd": 0.766,
+        "bindingEnergy": -9.693
+      },
+      {
+        "timeNs": 9.0,
+        "ligandRmsd": 1.482,
+        "backboneRmsd": 0.758,
+        "bindingEnergy": -9.388
+      },
+      {
+        "timeNs": 9.5,
+        "ligandRmsd": 1.448,
+        "backboneRmsd": 0.75,
+        "bindingEnergy": -9.179
+      },
+      {
+        "timeNs": 10.0,
+        "ligandRmsd": 1.522,
+        "backboneRmsd": 0.74,
+        "bindingEnergy": -8.992
+      },
+      {
+        "timeNs": 10.5,
+        "ligandRmsd": 1.533,
+        "backboneRmsd": 0.672,
+        "bindingEnergy": -8.968
+      },
+      {
+        "timeNs": 11.0,
+        "ligandRmsd": 1.526,
+        "backboneRmsd": 0.701,
+        "bindingEnergy": -9.304
+      },
+      {
+        "timeNs": 11.5,
+        "ligandRmsd": 1.518,
+        "backboneRmsd": 0.64,
+        "bindingEnergy": -9.04
+      },
+      {
+        "timeNs": 12.0,
+        "ligandRmsd": 1.618,
+        "backboneRmsd": 0.648,
+        "bindingEnergy": -9.233
+      },
+      {
+        "timeNs": 12.5,
+        "ligandRmsd": 1.592,
+        "backboneRmsd": 0.693,
+        "bindingEnergy": -9.152
+      },
+      {
+        "timeNs": 13.0,
+        "ligandRmsd": 1.455,
+        "backboneRmsd": 0.681,
+        "bindingEnergy": -9.266
+      },
+      {
+        "timeNs": 13.5,
+        "ligandRmsd": 1.452,
+        "backboneRmsd": 0.676,
+        "bindingEnergy": -9.284
+      },
+      {
+        "timeNs": 14.0,
+        "ligandRmsd": 1.414,
+        "backboneRmsd": 0.642,
+        "bindingEnergy": -9.541
+      },
+      {
+        "timeNs": 14.5,
+        "ligandRmsd": 1.39,
+        "backboneRmsd": 0.646,
+        "bindingEnergy": -9.396
+      },
+      {
+        "timeNs": 15.0,
+        "ligandRmsd": 1.401,
+        "backboneRmsd": 0.596,
+        "bindingEnergy": -9.521
+      },
+      {
+        "timeNs": 15.5,
+        "ligandRmsd": 1.357,
+        "backboneRmsd": 0.654,
+        "bindingEnergy": -9.337
+      },
+      {
+        "timeNs": 16.0,
+        "ligandRmsd": 1.324,
+        "backboneRmsd": 0.646,
+        "bindingEnergy": -9.442
+      },
+      {
+        "timeNs": 16.5,
+        "ligandRmsd": 1.408,
+        "backboneRmsd": 0.607,
+        "bindingEnergy": -9.335
+      },
+      {
+        "timeNs": 17.0,
+        "ligandRmsd": 1.343,
+        "backboneRmsd": 0.658,
+        "bindingEnergy": -9.254
+      },
+      {
+        "timeNs": 17.5,
+        "ligandRmsd": 1.378,
+        "backboneRmsd": 0.62,
+        "bindingEnergy": -9.428
+      },
+      {
+        "timeNs": 18.0,
+        "ligandRmsd": 1.412,
+        "backboneRmsd": 0.612,
+        "bindingEnergy": -9.538
+      },
+      {
+        "timeNs": 18.5,
+        "ligandRmsd": 1.52,
+        "backboneRmsd": 0.621,
+        "bindingEnergy": -9.442
+      },
+      {
+        "timeNs": 19.0,
+        "ligandRmsd": 1.591,
+        "backboneRmsd": 0.647,
+        "bindingEnergy": -8.896
+      },
+      {
+        "timeNs": 19.5,
+        "ligandRmsd": 1.547,
+        "backboneRmsd": 0.684,
+        "bindingEnergy": -9.024
+      },
+      {
+        "timeNs": 20.0,
+        "ligandRmsd": 1.55,
+        "backboneRmsd": 0.655,
+        "bindingEnergy": -9.073
+      },
+      {
+        "timeNs": 20.5,
+        "ligandRmsd": 1.585,
+        "backboneRmsd": 0.677,
+        "bindingEnergy": -9.297
+      },
+      {
+        "timeNs": 21.0,
+        "ligandRmsd": 1.53,
+        "backboneRmsd": 0.721,
+        "bindingEnergy": -8.968
+      },
+      {
+        "timeNs": 21.5,
+        "ligandRmsd": 1.514,
+        "backboneRmsd": 0.695,
+        "bindingEnergy": -9.369
+      },
+      {
+        "timeNs": 22.0,
+        "ligandRmsd": 1.545,
+        "backboneRmsd": 0.701,
+        "bindingEnergy": -9.122
+      },
+      {
+        "timeNs": 22.5,
+        "ligandRmsd": 1.505,
+        "backboneRmsd": 0.717,
+        "bindingEnergy": -9.14
+      },
+      {
+        "timeNs": 23.0,
+        "ligandRmsd": 1.422,
+        "backboneRmsd": 0.78,
+        "bindingEnergy": -9.501
+      },
+      {
+        "timeNs": 23.5,
+        "ligandRmsd": 1.383,
+        "backboneRmsd": 0.79,
+        "bindingEnergy": -9.465
+      },
+      {
+        "timeNs": 24.0,
+        "ligandRmsd": 1.328,
+        "backboneRmsd": 0.763,
+        "bindingEnergy": -9.489
+      },
+      {
+        "timeNs": 24.5,
+        "ligandRmsd": 1.319,
+        "backboneRmsd": 0.772,
+        "bindingEnergy": -9.438
+      },
+      {
+        "timeNs": 25.0,
+        "ligandRmsd": 1.37,
+        "backboneRmsd": 0.8,
+        "bindingEnergy": -9.208
+      },
+      {
+        "timeNs": 25.5,
+        "ligandRmsd": 1.381,
+        "backboneRmsd": 0.806,
+        "bindingEnergy": -9.524
+      },
+      {
+        "timeNs": 26.0,
+        "ligandRmsd": 1.33,
+        "backboneRmsd": 0.784,
+        "bindingEnergy": -9.561
+      },
+      {
+        "timeNs": 26.5,
+        "ligandRmsd": 1.422,
+        "backboneRmsd": 0.785,
+        "bindingEnergy": -9.405
+      },
+      {
+        "timeNs": 27.0,
+        "ligandRmsd": 1.516,
+        "backboneRmsd": 0.743,
+        "bindingEnergy": -9.315
+      },
+      {
+        "timeNs": 27.5,
+        "ligandRmsd": 1.468,
+        "backboneRmsd": 0.796,
+        "bindingEnergy": -9.063
+      },
+      {
+        "timeNs": 28.0,
+        "ligandRmsd": 1.524,
+        "backboneRmsd": 0.788,
+        "bindingEnergy": -9.018
+      },
+      {
+        "timeNs": 28.5,
+        "ligandRmsd": 1.564,
+        "backboneRmsd": 0.787,
+        "bindingEnergy": -9.18
+      },
+      {
+        "timeNs": 29.0,
+        "ligandRmsd": 1.541,
+        "backboneRmsd": 0.786,
+        "bindingEnergy": -9.079
+      },
+      {
+        "timeNs": 29.5,
+        "ligandRmsd": 1.553,
+        "backboneRmsd": 0.743,
+        "bindingEnergy": -9.183
+      },
+      {
+        "timeNs": 30.0,
+        "ligandRmsd": 1.59,
+        "backboneRmsd": 0.772,
+        "bindingEnergy": -9.254
+      },
+      {
+        "timeNs": 30.5,
+        "ligandRmsd": 1.559,
+        "backboneRmsd": 0.752,
+        "bindingEnergy": -9.382
+      },
+      {
+        "timeNs": 31.0,
+        "ligandRmsd": 1.547,
+        "backboneRmsd": 0.729,
+        "bindingEnergy": -9.313
+      },
+      {
+        "timeNs": 31.5,
+        "ligandRmsd": 1.464,
+        "backboneRmsd": 0.675,
+        "bindingEnergy": -9.45
+      },
+      {
+        "timeNs": 32.0,
+        "ligandRmsd": 1.384,
+        "backboneRmsd": 0.711,
+        "bindingEnergy": -9.41
+      },
+      {
+        "timeNs": 32.5,
+        "ligandRmsd": 1.376,
+        "backboneRmsd": 0.662,
+        "bindingEnergy": -9.297
+      },
+      {
+        "timeNs": 33.0,
+        "ligandRmsd": 1.37,
+        "backboneRmsd": 0.625,
+        "bindingEnergy": -9.435
+      },
+      {
+        "timeNs": 33.5,
+        "ligandRmsd": 1.367,
+        "backboneRmsd": 0.673,
+        "bindingEnergy": -9.313
+      },
+      {
+        "timeNs": 34.0,
+        "ligandRmsd": 1.287,
+        "backboneRmsd": 0.675,
+        "bindingEnergy": -9.752
+      },
+      {
+        "timeNs": 34.5,
+        "ligandRmsd": 1.371,
+        "backboneRmsd": 0.623,
+        "bindingEnergy": -9.658
+      },
+      {
+        "timeNs": 35.0,
+        "ligandRmsd": 1.445,
+        "backboneRmsd": 0.666,
+        "bindingEnergy": -9.463
+      },
+      {
+        "timeNs": 35.5,
+        "ligandRmsd": 1.462,
+        "backboneRmsd": 0.598,
+        "bindingEnergy": -9.166
+      },
+      {
+        "timeNs": 36.0,
+        "ligandRmsd": 1.408,
+        "backboneRmsd": 0.649,
+        "bindingEnergy": -9.364
+      },
+      {
+        "timeNs": 36.5,
+        "ligandRmsd": 1.479,
+        "backboneRmsd": 0.588,
+        "bindingEnergy": -9.37
+      },
+      {
+        "timeNs": 37.0,
+        "ligandRmsd": 1.498,
+        "backboneRmsd": 0.629,
+        "bindingEnergy": -9.251
+      },
+      {
+        "timeNs": 37.5,
+        "ligandRmsd": 1.618,
+        "backboneRmsd": 0.65,
+        "bindingEnergy": -8.997
+      },
+      {
+        "timeNs": 38.0,
+        "ligandRmsd": 1.605,
+        "backboneRmsd": 0.614,
+        "bindingEnergy": -9.151
+      },
+      {
+        "timeNs": 38.5,
+        "ligandRmsd": 1.596,
+        "backboneRmsd": 0.646,
+        "bindingEnergy": -9.236
+      },
+      {
+        "timeNs": 39.0,
+        "ligandRmsd": 1.613,
+        "backboneRmsd": 0.655,
+        "bindingEnergy": -9.199
+      },
+      {
+        "timeNs": 39.5,
+        "ligandRmsd": 1.483,
+        "backboneRmsd": 0.645,
+        "bindingEnergy": -9.207
+      },
+      {
+        "timeNs": 40.0,
+        "ligandRmsd": 1.446,
+        "backboneRmsd": 0.682,
+        "bindingEnergy": -9.509
+      },
+      {
+        "timeNs": 40.5,
+        "ligandRmsd": 1.432,
+        "backboneRmsd": 0.682,
+        "bindingEnergy": -9.271
+      },
+      {
+        "timeNs": 41.0,
+        "ligandRmsd": 1.416,
+        "backboneRmsd": 0.657,
+        "bindingEnergy": -9.454
+      },
+      {
+        "timeNs": 41.5,
+        "ligandRmsd": 1.342,
+        "backboneRmsd": 0.712,
+        "bindingEnergy": -9.703
+      },
+      {
+        "timeNs": 42.0,
+        "ligandRmsd": 1.323,
+        "backboneRmsd": 0.723,
+        "bindingEnergy": -9.328
+      },
+      {
+        "timeNs": 42.5,
+        "ligandRmsd": 1.333,
+        "backboneRmsd": 0.695,
+        "bindingEnergy": -9.315
+      },
+      {
+        "timeNs": 43.0,
+        "ligandRmsd": 1.386,
+        "backboneRmsd": 0.702,
+        "bindingEnergy": -9.475
+      },
+      {
+        "timeNs": 43.5,
+        "ligandRmsd": 1.314,
+        "backboneRmsd": 0.752,
+        "bindingEnergy": -9.599
+      },
+      {
+        "timeNs": 44.0,
+        "ligandRmsd": 1.397,
+        "backboneRmsd": 0.717,
+        "bindingEnergy": -9.425
+      },
+      {
+        "timeNs": 44.5,
+        "ligandRmsd": 1.438,
+        "backboneRmsd": 0.729,
+        "bindingEnergy": -9.146
+      },
+      {
+        "timeNs": 45.0,
+        "ligandRmsd": 1.465,
+        "backboneRmsd": 0.781,
+        "bindingEnergy": -9.199
+      },
+      {
+        "timeNs": 45.5,
+        "ligandRmsd": 1.467,
+        "backboneRmsd": 0.778,
+        "bindingEnergy": -9.389
+      },
+      {
+        "timeNs": 46.0,
+        "ligandRmsd": 1.524,
+        "backboneRmsd": 0.805,
+        "bindingEnergy": -9.283
+      },
+      {
+        "timeNs": 46.5,
+        "ligandRmsd": 1.617,
+        "backboneRmsd": 0.757,
+        "bindingEnergy": -9.191
+      },
+      {
+        "timeNs": 47.0,
+        "ligandRmsd": 1.576,
+        "backboneRmsd": 0.752,
+        "bindingEnergy": -9.068
+      },
+      {
+        "timeNs": 47.5,
+        "ligandRmsd": 1.61,
+        "backboneRmsd": 0.768,
+        "bindingEnergy": -9.024
+      },
+      {
+        "timeNs": 48.0,
+        "ligandRmsd": 1.578,
+        "backboneRmsd": 0.783,
+        "bindingEnergy": -8.909
+      },
+      {
+        "timeNs": 48.5,
+        "ligandRmsd": 1.471,
+        "backboneRmsd": 0.736,
+        "bindingEnergy": -9.517
+      },
+      {
+        "timeNs": 49.0,
+        "ligandRmsd": 1.539,
+        "backboneRmsd": 0.786,
+        "bindingEnergy": -9.168
+      },
+      {
+        "timeNs": 49.5,
+        "ligandRmsd": 1.495,
+        "backboneRmsd": 0.725,
+        "bindingEnergy": -9.296
+      },
+      {
+        "timeNs": 50.0,
+        "ligandRmsd": 1.419,
+        "backboneRmsd": 0.786,
+        "bindingEnergy": -9.41
+      }
+    ],
+    "energyDecomposition": {
+      "coulomb": -5.98,
+      "vdw": -3.81,
+      "polarSolvation": 2.18,
+      "nonPolarSolvation": -0.54,
+      "netDeltaG": -10.88
+    }
+  }
+}
