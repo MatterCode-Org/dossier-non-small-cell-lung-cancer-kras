@@ -1,0 +1,24 @@
+{
+  "targetName": "KRAS G12D",
+  "targetPdb": "7T47",
+  "bindingPocketCoords": {
+    "x": 12.44,
+    "y": -8.12,
+    "z": 24.18
+  },
+  "dockingGridBoxDims": {
+    "dx": 22.0,
+    "dy": 22.0,
+    "dz": 22.0
+  },
+  "keyPocketResidues": [
+    "ASP12",
+    "GLY60",
+    "TYR96",
+    "LYS16",
+    "ALA59"
+  ],
+  "biochemConstraints": "MW 250-600; cLogP 0.5-4.5; QED>=0.65; SAscore<=4.0; PAINS=0; bidentate H-bond to ASP12",
+  "pharmacophoreRules": "Donor to ASP12 OD1; acceptor near GLY60 NH; aromatic contact TYR96",
+  "designMethod": "Structure-Based Deterministic SOP (MatterCode)"
+}
